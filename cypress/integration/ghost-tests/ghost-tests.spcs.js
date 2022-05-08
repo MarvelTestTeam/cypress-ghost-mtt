@@ -2,7 +2,7 @@
 
 context('ghost-tests', () => {
 
-    it('Visits ghost aignin', () => {
+    it('Visits ghost signin', () => {
         cy.visit('http://localhost:2368/ghost/#/signin')
     })
     
