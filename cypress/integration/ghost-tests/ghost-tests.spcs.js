@@ -13,5 +13,9 @@ context('ghost-tests', () => {
           .type('Asdfg12345!')
         cy.get('#ember11').click()
     })
+
+    it('Tries to create tag with wrong color', () => {
+
+    })
     
 })
