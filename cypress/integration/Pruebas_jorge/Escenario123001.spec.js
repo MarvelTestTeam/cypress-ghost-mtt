@@ -2,7 +2,7 @@
 
 context('Actions', () => {
   beforeEach(() => {
-    cy.visit('http://localhost:2369/ghost/#/signin')
+    cy.visit('http://localhost:3001/ghost/#/signin')
   })
 
   // https://on.cypress.io/interacting-with-elements
@@ -16,14 +16,19 @@ context('Actions', () => {
             cy.get(('[id=ember11]')).click()
             cy.screenshot();
             cy.contains(('Tags')).click()
-            cy.contains(('New tag')).click()
-            cy.get(('#tag-name')).type('tag nuevo')
             cy.screenshot();
-            cy.get(('.input-color > .gh-input')).type('tabhti')
+            cy.contains(('News')).click()
             cy.screenshot();
-            cy.get(('[id=ember66]')).click()
+            cy.get(('#tag-name')).type('Nombre nuevo')
+            cy.screenshot();
+            cy.get(('[id=ember70]')).click()
+            cy.screenshot();
+            cy.contains(('Tags')).click()
+            cy.screenshot();
+            cy.contains(('Dashboard')).click()
             cy.screenshot();
             
+          
             
             
   })
