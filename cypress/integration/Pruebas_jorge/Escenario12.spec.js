@@ -2,7 +2,7 @@
 
 context('Actions', () => {
   beforeEach(() => {
-    cy.visit('http://localhost:2369/ghost/#/signin')
+    cy.visit('http://localhost:2368/ghost/#/signin')
   })
 
   // https://on.cypress.io/interacting-with-elements
@@ -17,7 +17,7 @@ context('Actions', () => {
             cy.screenshot();
             cy.contains(('Tags')).click()
             cy.screenshot();
-            cy.contains(('News')).click()
+            cy.contains(('news')).click()
             cy.screenshot();
             cy.get(('#tag-name')).type('Nombre nuevo')
             cy.screenshot();
@@ -25,8 +25,7 @@ context('Actions', () => {
             cy.screenshot();
             cy.contains(('Tags')).click()
             cy.screenshot();
-            cy.contains(('Dashboard')).click()
-            cy.screenshot();
+            
             
           
             

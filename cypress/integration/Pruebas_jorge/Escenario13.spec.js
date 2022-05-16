@@ -2,7 +2,7 @@
 
 context('Actions', () => {
   beforeEach(() => {
-    cy.visit('http://localhost:2369/ghost/#/signin')
+    cy.visit('http://localhost:2368/ghost/#/signin')
   })
 
   // https://on.cypress.io/interacting-with-elements
@@ -17,11 +17,11 @@ context('Actions', () => {
             cy.screenshot();
             cy.contains(('Tags')).click()
             cy.screenshot();
-            cy.get(('.gh-tag-list-name')).click()
+            cy.get(('#ember65 > .gh-tag-list-name')).click()
             cy.screenshot();
             cy.get(('#tag-name')).clear()
             cy.screenshot();
-            cy.get(('[id=ember66]')).click()
+            cy.get(('#ember70 > span')).click()
             cy.screenshot();
             
             

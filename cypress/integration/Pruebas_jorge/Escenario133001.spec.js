@@ -13,15 +13,15 @@ context('Actions', () => {
     cy.screenshot();
             cy.get('input[name="password"]').type('Asdfg12345!')
             cy.screenshot();
-            cy.get(('[id=ember11]')).click()
+            cy.get(('[id=ember12]')).click()
             cy.screenshot();
             cy.contains(('Tags')).click()
             cy.screenshot();
-            cy.get(('.gh-tag-list-name')).click()
+            cy.get(('#ember78 > .gh-tag-list-name')).click()
             cy.screenshot();
             cy.get(('#tag-name')).clear()
             cy.screenshot();
-            cy.get(('[id=ember66]')).click()
+            cy.get(('#ember84 > span')).click()
             cy.screenshot();
             
             
